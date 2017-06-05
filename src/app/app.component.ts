@@ -1,7 +1,33 @@
 import { Component } from '@angular/core';
 
+import { Hero } from './hero';
+
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  template: `
+  	<h1>Hello {{title}}</h1>
+  	<h2>my favorite hero :{{myhero.name}}<h2>
+  	<p>heros:</p>
+  	<ul>
+  		<li *ngFor="let hero of heroes">{{hero.name}}</li>
+  	</ul>
+  	<p *ngIf="heroes.length > 3">three heros length</p>
+  `,
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  { 
+	title = 'tour of heroes'; 
+//	heroes=[
+//		{name:'first'},
+//		{name:'second'},
+//		{name:'three'},
+//		{name:'four'}
+//	];
+	heroes=[
+		new Hero(1,'jack'),
+		new Hero(2,'rouce'),
+		new Hero(3,'alice'),
+		new Hero(4,'amy')
+		
+	];
+	myhero=this.heroes[0];
+}
