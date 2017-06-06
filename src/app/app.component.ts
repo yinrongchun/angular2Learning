@@ -23,10 +23,10 @@ export class AppComponent  {
 //		{name:'four'}
 //	];
 	heroes=[
-		new Hero(1,'jack'),
-		new Hero(2,'rouce'),
-		new Hero(3,'alice'),
-		new Hero(4,'amy')
+		new Hero(1,'jack','多余的字符串参数但是必须','多余的字符串参数但是必须'),
+		new Hero(2,'rouce','多余的字符串参数但是必须','多余的字符串参数但是必须'),
+		new Hero(3,'alice','多余的字符串参数但是必须','多余的字符串参数但是必须'),
+		new Hero(4,'amy','多余的字符串参数但是必须','多余的字符串参数但是必须')
 		
 	];
 	myhero=this.heroes[0];

@@ -8,7 +8,7 @@ import { heroListComponent }  from './hero-list.component';
 import { FormComponent }  from './form-style.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule,FormsModule ],
   declarations: [ AppComponent,ClickMeComponent,heroListComponent,FormComponent ],
   bootstrap:    [ AppComponent,ClickMeComponent,heroListComponent,FormComponent ]
 })

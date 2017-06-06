@@ -15,5 +15,6 @@ export class FormComponent {
 		this.submitted=true;
 	}
 	//TODO: Remove this when we are done
+	//diagnostic属性用于返回这个模型的JSON形式,用于调试,最后会清楚
 	get diagnostic(){return JSON.stringify(this.model);}
 }
