@@ -12,6 +12,7 @@ import { Hero } from './hero';
   		<li *ngFor="let hero of heroes">{{hero.name}}</li>
   	</ul>
   	<p *ngIf="heroes.length > 3">three heros length</p>
+  	<form-style></form-style>
   `,
 })
 export class AppComponent  { 
